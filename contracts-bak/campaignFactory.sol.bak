@@ -1,0 +1,26 @@
+pragma solidity ^0.4.22;
+
+import "./Campaign.sol";
+
+// title FoodForAllCampaignFactory factory contract - Allows to create 'food for all' campaign contracts
+contract FoodForAllCampaignFactory {
+
+    //Stores deployed contract campaigns
+    address[] public deployedFoodCampaigns;
+
+    function foodforAllCreateCampaign () public {
+        address newFoodCampaignAddr = new FoodForAllCampaign (/*TODO */ ) ;
+        deployedFoodCampaigns.push(newFoodCampaignAddr);
+    }
+
+    // Get deployed food campaigs list
+    function getDeployedFoodCampaigns () public view returns (address[]) {
+        return deployedFoodCampaigns ;
+    } 
+
+    //  total active campaign counts
+    function getDeployedFoodCampaignsCount () public view returns (uint) {
+        return deployedFoodCampaigns.length ; 
+    }
+
+}

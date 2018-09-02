@@ -1,0 +1,73 @@
+pragma solidity ^0.4.22;
+
+contract FoodForAllCampaign {
+    
+    enum ContractStatus {Active, ReadyForDestroy, Destroyed}
+    enum CampaignStatus {
+        CampaignCreated,
+        RequiredProducer,
+        RequiredDelivery,
+        ReadyForDelivery,
+        DeliveryPicked, 
+        DeliveryInTransit,
+        DeliveryDropped, 
+        DeliveryExpired, 
+        DeliveryReceived 
+    }
+
+    struct Campaign {
+
+    }
+
+        
+    struct Requirement{
+        uint quantity;  // quantity in numbers , for how many people 
+        UserInfo requester ;  // who requested this food. 
+        Time deliveryTime ; //when they want food
+        string description ; // description of requirement
+        string images ; // IPFS image string to store the images to portrait the condition
+           
+    }
+
+    
+    struct Production {
+        UserInfo producer ;  // person/entitiy who is ready to make food
+        Time prodReadyTime;
+        
+    }
+
+    struct Delivery {
+        UserInfo deliverer ;  // person who is ready to deliver
+        Time deliveryPickTime;
+        Location deliveryPickLocation;
+    }
+    struct UserInfo {
+        address userAddress;
+        string name;
+        string avatar ; // IPFS info
+        uint tokenBalance;  // loyality token aquired by participating this noble cause ( future )
+        uint userRating ; // user rating , integrity and accountability of the user ( future)
+    }
+
+    struct Location {
+        string zipcode ;
+        string locationAddr;
+        string latitude ;
+        string logitude ;
+    }
+
+    struct Time {
+        uint date ;
+        uint time ;
+    }
+
+    // Fallback function, allows this contract to receive ether.
+    function () public payable {}
+
+
+     
+}
+
+
+
+

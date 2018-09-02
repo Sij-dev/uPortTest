@@ -1,0 +1,19 @@
+{
+    "abi": "[{\"constant\":true,\"inputs\":[],\"name\":\"masterCopy\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"name\":\"_masterCopy\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"fallback\"}]",
+    "bytecode": "608060405234801561001057600080fd5b506040516020806101658339810160405251600160a060020a038116151561003757600080fd5b60008054600160a060020a03909216600160a060020a031990921691909117905560ff806100666000396000f300608060405260043610603e5763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663a619486e8114607c575b6000805473ffffffffffffffffffffffffffffffffffffffff169036908037600080368184600019f43d6000803e8080156077573d6000f35b3d6000fd5b348015608757600080fd5b50608e60b7565b6040805173ffffffffffffffffffffffffffffffffffffffff9092168252519081900360200190f35b60005473ffffffffffffffffffffffffffffffffffffffff16815600a165627a7a723058205a740dd6409044efde6937f7372e3e26c18e0cc053e66550449331caff2f349f0029",
+    "functionHashes": {
+        "masterCopy()": "a619486e"
+    },
+    "gasEstimates": {
+        "creation": [
+            20622,
+            51000
+        ],
+        "external": {
+            "": null,
+            "masterCopy()": 399
+        },
+        "internal": {}
+    },
+    "runtimeBytecode": "608060405260043610603e5763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663a619486e8114607c575b6000805473ffffffffffffffffffffffffffffffffffffffff169036908037600080368184600019f43d6000803e8080156077573d6000f35b3d6000fd5b348015608757600080fd5b50608e60b7565b6040805173ffffffffffffffffffffffffffffffffffffffff9092168252519081900360200190f35b60005473ffffffffffffffffffffffffffffffffffffffff16815600a165627a7a723058205a740dd6409044efde6937f7372e3e26c18e0cc053e66550449331caff2f349f0029"
+}
